@@ -1,0 +1,137 @@
+<!DOCTYPE html> <!--HTML5를 사용하기 위한 선언-->
+<html lang="ko"> <!--문서 언어 설정-->
+<head>
+    <meta charset="UTF-8"> <!--문서의 문자 인코딩 설정-->
+    <link rel="stylesheet" href="basic.css">>
+    
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0"> <!--웹 페이지에서 사용자가 볼 수 있는 영역인 Viewport 제어-->
+    <title>자기소개 페이지</title> <!--문서 제목 설정-->
+</head>
+<style>
+    body{
+        background-color: #233255;
+        padding-top: 150px;
+    }
+    hr{
+        margin:0 30px;
+    }
+    td{
+        width:450px;
+    }
+    h2{
+        color: black;
+    }
+    .profile{
+        background-color: white;
+        border-top: 10px solid white;
+        border-bottom: 10px solid white;
+        border-radius: 10px;
+        margin: 0 auto;
+        width: 900px;
+
+        text-align:center;
+    }
+    .text{
+        color: gray;
+        text-align: left;
+        font: size 1.2em;
+        list-style: none;
+    }
+    <!--배경 이미지 수정 필요할 듯-->
+    div {
+  background-color: white;
+  width: 500px;
+  border: 20px solid green;
+  padding: 20px;
+  margin: 30px;
+}
+</style>
+<body>
+    <div class = "profile">
+        <h1>안녕하세요, 저는 김유성입니다.</h1> <!--제목 표시-->
+        <p>Html과 Css가 처음이라서 어렵게 느껴집니다. 특히 디자인 감각이 없는 저로써는 평가가 많이 두렵습니다.</p> <!--자기소개 정보 표시-->
+        <p>그렇지만 성과를 얻기 위해 견디겠습니다.</p>
+        <hr><!--가로 선 표시-->
+        <table><!--table을 사용해서 표 형태로 정보 나열-->
+            <td><!--열을 나타내는 태그-->
+                <tr><!--행을 나타내는 태그-->
+                    <td>
+                        <h2>my profile</h2><!--제목 표시-->
+                        <ul class="text"><!--순서 없는 리스트 사용해서 항목 나열-->
+                            <li>이름: 김유성</li><!--리스트 아이템 표시-->
+                            <li>생일: 2001-03-23</li><!--리스트 아이템 표시-->
+                            <li>핸드폰: 010-2269-9205</li><!--리스트 아이템 표시-->
+                            <li>이메일: ....@naver.com</li><!--리스트 아이템 표시-->
+                            <li>블로그: ....@tistory.com</li><!--리스트 아이템 표시-->
+                        </ul>
+                    </td>
+                    <td>
+                        <h2>학력(Educational History)</h2>
+                        <ul class="text">
+                            <li>2017-2020 성남고등학교</li><!--리스트 아이템 표시-->
+                            <li>2020-2024 동국대학교 서울캠퍼스 정보통신공학과</li><!--리스트 아이템 표시-->
+                            <li>2025.01-2025.08 동국대학교 일본학과(전과)</li><!--리스트 아이템 표시-->
+                            <li>2025.09~ 동국대학교 일본학과, 정보통신공학과</li><!--리스트 아이템 표시-->
+                        </ul>
+                    </td>
+                </tr>
+                <tr><!--행을 나타내는 태그-->
+                    <td>
+                        <h2>추가 정보</h2>
+                        <ul class = "text">
+                            <li>python/c++ 경험 있음</li><!--리스트 아이템 표시-->
+                            <li>대체 역사 소설 읽는 것을 좋아함</li><!--리스트 아이템 표시-->
+                            <li>특기: 어렵게 생각하기</li><!--리스트 아이템 표시-->
+                            <li>MBTI: ISTP</li><!--리스트 아이템 표시-->
+                            <li>꿈: 부자</li><!--리스트 아이템 표시-->
+                        </ul>
+                    </td>
+                    <td>
+                        <h2>기술 스택</h2>
+                        <ul class="text">
+                            <li>JLPT N2</li><!--리스트 아이템 표시-->
+                            <li>영어 조금 할 줄 알음</li><!--리스트 아이템 표시-->
+                            <li>....</li><!--리스트 아이템 표시-->
+                        </ul>
+                    </td>
+                </tr>
+            </td>
+        </table>
+        
+        <h2>각오</h2> <!--제목 표시-->
+        <table> <!--table을 사용해서 표 형태로 정보 나열-->
+            <thead><!--테이블의 헤더 부분을 나타내는 태그-->
+                <tr><!--행을 나타내는 태그-->
+                    <th>학교</th> <!--열 제목-->
+                    <th>전공</th>
+                    <th>학위</th>
+                    <th>졸업연도</th>
+
+                </tr>
+            </thead>
+            <tbody><!--테이블의 내용을 나타내는 태그-->
+                <tr><!--첫번째 행-->
+                    <td>동국대학교</td> <!--학교-->
+                    <td>일본학, 정보통신공학</td> <!--전공-->
+                    <td>------고졸</td>
+
+                </tr>
+                <tr><!--두 번째 행-->
+                    <td>성남고등학교</td><!--힉교이름 2-->
+                    <td> ---- </td>
+                    <td>High school</td>
+                    <td>2020.02</td>
+
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+</body>
+
+<footer><!--웹 페이지나 섹션의 마지막 부분을 정의, 보통 연락처 정보, 저작권 정보 등을 포함-->
+    <p>&copy; 2025 my website. All right reserved</p>
+</footer>
+</html>
+
+<!--https://a1ways-hyerang.tistory.com/entry/%EC%9E%90%EA%B8%B0%EC%86%8C%EA%B0%9C-%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%A7%8C%EB%93%A4%EA%B8%B0-HTML-CSS-->
