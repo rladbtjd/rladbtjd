@@ -1,16 +1,62 @@
 ## Hi there 👋
 
-<!--
-**rladbtjd/rladbtjd** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<body>
+    <div class = "profile">
+        <h1>안녕하세요, 저는 김유성입니다.</h1> <!--제목 표시-->
+        <p>Html과 Css가 처음이라서 어렵게 느껴집니다. 특히 디자인 감각이 없는 저로써는 평가가 많이 두렵습니다.</p> <!--자기소개 정보 표시-->
+        <p>그렇지만 성과를 얻기 위해 견디겠습니다.</p>
+        <hr><!--가로 선 표시-->
+        <table><!--table을 사용해서 표 형태로 정보 나열-->
+            <td><!--열을 나타내는 태그-->
+                <tr><!--행을 나타내는 태그-->
+                    <td>
+                        <h2>my profile</h2><!--제목 표시-->
+                        <ul class="text"><!--순서 없는 리스트 사용해서 항목 나열-->
+                            <li>이름: 김유성</li><!--리스트 아이템 표시-->
+                            <li>생일: 2001-03-23</li><!--리스트 아이템 표시-->
+                            <li>핸드폰: 010-2269-9205</li><!--리스트 아이템 표시-->
+                            <li>이메일: ....@naver.com</li><!--리스트 아이템 표시-->
+                            <li>블로그: ....@tistory.com</li><!--리스트 아이템 표시-->
+                        </ul>
+                    </td>
+                    <td>
+                        <h2>학력(Educational History)</h2>
+                        <ul class="text">
+                            <li>2017-2020 성남고등학교</li><!--리스트 아이템 표시-->
+                            <li>2020-2024 동국대학교 서울캠퍼스 정보통신공학과</li><!--리스트 아이템 표시-->
+                            <li>2025.01-2025.08 동국대학교 일본학과(전과)</li><!--리스트 아이템 표시-->
+                            <li>2025.09~ 동국대학교 일본학과, 정보통신공학과</li><!--리스트 아이템 표시-->
+                        </ul>
+                    </td>
+                </tr>
+                <tr><!--행을 나타내는 태그-->
+                    <td>
+                        <h2>추가 정보</h2>
+                        <ul class = "text">
+                            <li>python/c++ 경험 있음</li><!--리스트 아이템 표시-->
+                            <li>대체 역사 소설 읽는 것을 좋아함</li><!--리스트 아이템 표시-->
+                            <li>특기: 어렵게 생각하기</li><!--리스트 아이템 표시-->
+                            <li>MBTI: ISTP</li><!--리스트 아이템 표시-->
+                            <li>꿈: 부자</li><!--리스트 아이템 표시-->
+                        </ul>
+                    </td>
+                    <td>
+                        <h2>기술 스택</h2>
+                        <ul class="text">
+                            <li>JLPT N2</li><!--리스트 아이템 표시-->
+                            <li>영어 조금 할 줄 알음</li><!--리스트 아이템 표시-->
+                            <li>....</li><!--리스트 아이템 표시-->
+                        </ul>
+                    </td>
+                </tr>
+            </td>
+        </table>
+    </div>
+</body>
 
-Here are some ideas to get you started:
+<footer><!--웹 페이지나 섹션의 마지막 부분을 정의, 보통 연락처 정보, 저작권 정보 등을 포함-->
+    <p>&copy; 2025 my website. All right reserved</p>
+</footer>
+</html>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<!--https://a1ways-hyerang.tistory.com/entry/%EC%9E%90%EA%B8%B0%EC%86%8C%EA%B0%9C-%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%A7%8C%EB%93%A4%EA%B8%B0-HTML-CSS-->
