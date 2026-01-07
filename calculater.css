@@ -6,6 +6,7 @@
     --btn-light-gray: #A5A5A5;
     --btn-dark-gray: #333333;
     --btn-orange: #FF9F0A;
+    --btn-light-red: #FF6464;
     --btn-size: 80px;
     --gap-size: 12px;
 }
@@ -26,7 +27,7 @@ body {
 .calculator {
     background-color: var(--bg-color);
     padding: 20px;
-    border-radius: 40px;
+    border-radius: 60px;
     box-shadow: 0px 10px 20px rgba(0,0,0,0.1);
 }
 
@@ -84,6 +85,12 @@ body {
     background-color: var(--btn-orange);
     color: var(--text-white);
     font-size: 36px; /* 연산 기호는 약간 더 크게 */
+}
+
+.btn-light-red{
+    background-color: var(--btn-light-red);
+    color: var(--text-white);
+    font-size: 36px;
 }
 
 /* '0' 버튼 특별 스타일 */
