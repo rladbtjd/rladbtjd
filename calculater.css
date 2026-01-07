@@ -19,7 +19,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #f0f0f0; /* 배경색은 임의 설정 */
+    background-color: #5ACCFF; /* 배경색은 임의 설정 */
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
@@ -101,3 +101,4 @@ body {
     justify-content: flex-start; /* 왼쪽 정렬 */
     padding-left: 30px; /* 왼쪽 여백 추가 */
 }
+
