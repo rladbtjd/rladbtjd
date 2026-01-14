@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>온라인 알람 시계</title>
+    <link rel="stylesheet" href="Watchstyle1.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1 class="title">온라인 알람 시계</h1>
+        
+        <div class="battery-wrapper">
+            <div class="battery-box">배터리 : <span id="battery-level">100</span>%</div>
+        </div>
+
+        <div class="clock-container">
+            <div id="date-display" class="date-text">0000년 00월 00일 요일</div>
+            <div id="time-display" class="time-text">00:00:00</div>
+        </div>
+
+        <div class="setup-section">
+            <h3>알람 시간 설정</h3>
+            <div class="input-group">
+                <div class="input-item">
+                    <label>시</label>
+                    <input type="number" id="alarm-h" min="0" max="23" placeholder="00">
+                </div>
+                <div class="input-item">
+                    <label>분</label>
+                    <input type="number" id="alarm-m" min="0" max="59" placeholder="00">
+                </div>
+                <div class="input-item">
+                    <label>초</label>
+                    <input type="number" id="alarm-s" min="0" max="59" placeholder="00">
+                </div>
+            </div>
+            <button class="main-btn" onclick="addAlarm()">알람 시계 설정</button>
+        </div>
+
+        <div class="data-section">
+            <h3>알람 시계 데이터</h3>
+            <table class="alarm-table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>알람 시간</th>
+                        <th>상태</th>
+                    </tr>
+                </thead>
+                <tbody id="alarm-body">
+                    </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="Watchscript1.js"></script>
+</body>
+</html>
