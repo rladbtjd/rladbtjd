@@ -1,0 +1,132 @@
+/* 색상 및 크기 변수 정의 (수정 용이성) */
+:root {
+    --bg-color: black;
+    --text-white: white;
+    --text-black: black;
+    --btn-light-gray: #A5A5A5;
+    --btn-dark-gray: #333333;
+    --btn-orange: #FF9F0A;
+    --btn-light-red: #FF6464;
+    --btn-size: 95px;
+    --gap-size: 15px;
+}
+
+/* 기본 리셋 */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: white; /* 배경색은 임의 설정 */
+    
+    background-repeat: no-repeat;
+    background-size: 40% 50%;
+    background-position: 0% center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+.Second-project{
+    font-size: 80px;
+    border-radius: 25px;
+    padding: 20px;
+    margin:40px;
+    box-shadow: 0 20px 50px -25px rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    background-color: gold;
+} 
+/* 계산기 본체 */
+.calculator {
+    background-color: var(--bg-color);
+    padding: 20px;
+    border-radius: 60px;
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.1);
+}
+
+
+/* 결과 화면 */
+.display {
+    color: var(--text-white);
+    font-size: 90px; /* 이미지에 맞게 크기 조절 */
+    font-weight: 300; /* 얇은 폰트 두께 */
+    margin: 0;
+    text-align: right;
+    padding: 20px 10px;
+    margin-bottom: 10px;
+    letter-spacing: -2px; /* 자간 조절 */
+}
+
+/* 버튼 그리드 컨테이너 */
+.buttons-grid {
+    display: grid;
+    grid-template-columns: repeat(4, var(--btn-size)); /* 4열 배치 */
+    gap: var(--gap-size); /* 버튼 사이 간격 */
+}
+
+/* 버튼 공통 스타일 */
+.btn {
+    width: var(--btn-size);
+    height: var(--btn-size);
+    border-radius: 50%; /* 완벽한 원형 */
+    border: none;
+    font-size: 32px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 0; /* 기본 패딩 제거 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: filter 0.2s; /* 클릭 효과 부드럽게 */
+}
+
+/* 버튼 클릭 효과 */
+.btn:active {
+    filter: brightness(1.2); /* 클릭 시 밝게 */
+}
+
+/* 색상별 버튼 스타일 */
+.btn-light {
+    background-color: var(--btn-light-gray);
+    color: var(--text-black);
+}
+
+.btn-dark {
+    background-color: var(--btn-dark-gray);
+    color: var(--text-white);
+}
+
+.btn-orange {
+    background-color: var(--btn-orange);
+    color: var(--text-white);
+    font-size: 36px; /* 연산 기호는 약간 더 크게 */
+}
+
+.btn-light-red{
+    background-color: var(--btn-light-red);
+    color: var(--text-white);
+    font-size: 36px;
+}
+
+/* '0' 버튼 특별 스타일 */
+.btn-zero {
+    grid-column: span 2; /* 2칸 차지 */
+    width: auto; /* 너비 자동 (2칸 + 간격) */
+    border-radius: 40px; /* 타원형 모서리 (높이의 절반) */
+    justify-content: flex-start; /* 왼쪽 정렬 */
+    padding-left: 30px; /* 왼쪽 여백 추가 */
+}
+
+/* 히스토리(연산 과정) 스타일 추가 */
+.display-container {
+    text-align: right;
+    padding: 20px 15px;
+}
+
+.history {
+    color: #888;
+    font-size: 24px;
+    min-height: 30px;
+    margin-bottom: 5px;
+}
