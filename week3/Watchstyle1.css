@@ -1,8 +1,11 @@
 /* 기본 초기화 */
 * { margin: 0; padding: 0; box-sizing: border-box; }
+
 body {
-    background-color: #000;
-    color: #fff;
+    /* 1. 전체 배경색을 밝은 그레이로 변경 */
+    background-color: #f8f9fa; 
+    /* 2. 기본 글자색을 어두운 색으로 변경 */
+    color: #212529;
     font-family: 'Pretendard', sans-serif;
     display: flex;
     justify-content: center;
@@ -12,59 +15,74 @@ body {
 .wrapper { width: 100%; max-width: 800px; text-align: center; }
 
 /* 제목 */
-.title { font-size: 2rem; font-weight: bold; margin-bottom: 10px; }
+.title { font-size: 2rem; font-weight: bold; margin-bottom: 10px; color: #1a1a1a; }
 
-/* 배터리 */
+/* 배터리 표시 박스 */
 .battery-wrapper { display: flex; justify-content: flex-end; margin-bottom: 20px; }
 .battery-box {
-    border: 1px solid #333;
+    border: 1px solid #dee2e6;
     padding: 8px 15px;
-    background: #1a1a1a;
+    background: #ffffff; /* 흰색 배경 */
     border-radius: 5px;
-    color: #eee;
+    color: #495057;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* 약간의 그림자 추가 */
 }
 
-/* 시계 영역 (FR2 대응) */
-.clock-container { margin-bottom: 40px; transition: all 0.5s; padding: 20px; border-radius: 15px; }
-.date-text { color: #888; font-size: 1.2rem; margin-bottom: 10px; }
-.time-text { font-size: 6rem; font-weight: bold; transition: color 0.3s; }
+/* 시계 영역 */
+.clock-container { 
+    margin-bottom: 40px; 
+    transition: all 0.5s; 
+    padding: 30px; 
+    background-color: #ffffff; /* 시계 배경 흰색 */
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+.date-text { color: #6c757d; font-size: 1.2rem; margin-bottom: 10px; }
+.time-text { font-size: 6rem; font-weight: bold; color: #212529; }
 
-/* 배터리 0%일 때 화면 (FR2) */
-.clock-container.off { background-color: #000 !important; }
+/* FR2: 배터리 0%일 때 화면 꺼짐 효과 (여전히 검정색으로 유지하여 '꺼진' 느낌 강조) */
+.clock-container.off { background-color: #1a1a1a !important; }
 .clock-container.off .time-text, 
-.clock-container.off .date-text { color: #000 !important; }
+.clock-container.off .date-text { color: #1a1a1a !important; }
 
 /* 설정 영역 */
 .setup-section { text-align: left; margin-bottom: 40px; }
-h3 { font-size: 1.1rem; margin-bottom: 15px; color: #fff; }
+h3 { font-size: 1.1rem; margin-bottom: 15px; color: #343a40; border-left: 4px solid #38bdf8; padding-left: 10px; }
 
 .input-group { display: flex; gap: 15px; margin-bottom: 20px; }
 .input-item { flex: 1; display: flex; flex-direction: column; }
-.input-item label { font-size: 0.8rem; color: #888; margin-bottom: 5px; }
+.input-item label { font-size: 0.8rem; color: #adb5bd; margin-bottom: 5px; }
+
+/* 입력창 스타일 */
 .input-item input {
-    background: #121214;
-    border: 1px solid #333;
-    color: #fff;
+    background: #ffffff;
+    border: 1px solid #ced4da;
+    color: #212529;
     padding: 12px;
     border-radius: 8px;
     font-size: 1rem;
 }
+.input-item input:focus {
+    outline: none;
+    border-color: #38bdf8;
+}
 
-/* 하늘색 버튼 */
+/* 버튼 (하늘색 포인트는 유지) */
 .main-btn {
     width: 100%;
     background-color: #38bdf8;
-    color: #000;
+    color: #fff; /* 밝은 배경에선 글자를 흰색으로 하는 게 더 깔끔합니다 */
     border: none;
     padding: 15px;
     border-radius: 8px;
     font-weight: bold;
     cursor: pointer;
     font-size: 1rem;
+    transition: background 0.2s;
 }
 .main-btn:hover { background-color: #0ea5e9; }
 
 /* 테이블 영역 */
-.alarm-table { width: 100%; border-collapse: collapse; margin-top: 10px; }
-.alarm-table th { color: #888; font-weight: normal; border-bottom: 1px solid #222; padding: 10px; text-align: left; }
-.alarm-table td { padding: 15px 10px; border-bottom: 1px solid #111; text-align: left; }
+.alarm-table { width: 100%; border-collapse: collapse; margin-top: 10px; background: #fff; border-radius: 8px; overflow: hidden; }
+.alarm-table th { background: #f1f3f5; color: #495057; font-weight: bold; border-bottom: 2px solid #dee2e6; padding: 12px; text-align: left; }
+.alarm-table td { padding: 15px 12px; border-bottom: 1px solid #f1f3f5; text-align: left; color: #212529; }
