@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To Do List with Calendar</title>
+  <link rel="stylesheet" href="Todolist_practice.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <header>
+    <h1>📅 To Do List with Calendar</h1>
+  </header>
+
+    <div class="myname">
+        <h2>초보 웹 개발자 김유성</h2>
+    </div>
+
+  <div class="container">
+    <!-- Calendar Section -->
+    <div class="calendar-section">
+      <div class="calendar-header">
+        <button onclick="previousMonth()">◀</button>
+        <h2 id="current-month"></h2>
+        <button onclick="nextMonth()">▶</button>
+      </div>
+      <div class="calendar-grid" id="calendar-grid"></div>
+    </div>
+
+    <!-- Todo List Section -->
+    <div class="todo-section">
+      <div class="input-wrapper">
+        <input type="text" id="input-box" placeholder="내용을 입력하세요" onkeydown="enterKey(event)"/>
+        <button id="input-button" onclick="onClickInputButton()">+</button>
+      </div>
+      <ul class="to-do-list" id="todo-list"></ul>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="Todolist_practice.js"></script>
+</body>
+</html>
+
+<!-- https://dakyungoh.github.io/to-do-list/의 코드를 참조했습니다.  -->
