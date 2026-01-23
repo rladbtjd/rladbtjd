@@ -224,7 +224,8 @@ document.getElementById('signupForm').addEventListener('submit', function(e) {
         userId,
         name,
         phoneNumber,
-        email
+        email,
+        password
     });
     
     // 폼 초기화
